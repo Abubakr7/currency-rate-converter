@@ -1,0 +1,63 @@
+.sel {
+    background: #2c3e50;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+  .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: .25em;
+    left: 190px;
+  }
+  select {
+    flex: 1;
+    padding: 0 .5em;
+    cursor: pointer;
+  }
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+  }
+
+  .select:hover::after {
+    color: #f39c12;
+  }
+
+  .currency {
+    position: relative;
+    border-radius: 50px; 
+    color: #fff;
+    background: rgb(255,128,0);
+    background: radial-gradient(circle, rgba(255,128,0,1) 0%, rgba(255,128,0,1) 35%, rgba(255,181,0,1) 100%);
+    padding: 50px;
+    margin: 100px auto;
+    width: 800px;
+  }
+  .pos{
+    margin-left: 175px;
+  }
+
+ 
